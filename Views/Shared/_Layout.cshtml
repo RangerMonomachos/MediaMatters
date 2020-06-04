@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+    <header>
+        <a class="btn btn-dark" href="https://localhost:44396/Home/Index" role="button">Home</a>
+        <a class="btn btn-dark" href="https://localhost:44396/Home/Books" role="button">Books</a>
+        <a class="btn btn-dark" href="https://localhost:44396/Home/Albums" role="button">Albums</a>
+        <a class="btn btn-dark" href="https://localhost:44396/Home/Movies" role="button">Movies</a>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+    </footer>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
