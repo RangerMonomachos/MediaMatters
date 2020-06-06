@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MediaMatters.Models;
 
 namespace MediaMatters
 {
@@ -16,6 +17,9 @@ namespace MediaMatters
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IBookRepository, bookRepository>();
+            services.AddScoped<IAlbumRepository, albumRepository>();
+            services.AddScoped<IMovieRepository, movieRepository>();
             services.AddControllersWithViews();
         }
 

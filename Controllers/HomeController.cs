@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediaMatters.Models;
 
 
 namespace MediaMatters.Controllers
@@ -12,6 +13,21 @@ namespace MediaMatters.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        //private readonly IBookRepository br;
+        //private readonly IAlbumRepository ar;
+        //private readonly IMovieRepository mr;
+        //public HomeController(IBookRepository bookRepository)
+        //{
+        //    br = bookRepository;
+        //}
+        //public HomeController(IAlbumRepository albumRepository)
+        //{
+        //    ar = albumRepository;
+        //}
+        //public HomeController(IMovieRepository movieRepository)
+        //{
+        //    mr = movieRepository;
+        //}
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
